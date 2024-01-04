@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.body{
+    min-height: 100vh;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    text-align: center;
+    animation: fadeIn 1s;
+}
+
+.header span{
+    font-weight: 800;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+.headingArea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 90px);
+    animation: slideLeft 1s;
+}
+
+.headingUI{
+    font-size: 80px;
+}
+
+.frontend{
+    font-family: Clash Display,sans-serif;
+    font-size: 100px;
+    font-weight: 800;
+    margin-bottom: -10px;
+}
+
+.developer{
+    font-family: Clash Display,sans-serif;
+    font-size: 70px;
+    padding-left: 10px;
+}
+
+
+.line{
+    width: 90px;
+    height: 3px;
+    background-color: black;
+}
+
+.headingFrontend{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+@keyframes slideLeft {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    80%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 1;
+    }
+}
+
+
+/* Phones */
+@media only screen and (max-width: 600px) {
+    .body {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .headingUI{
+        font-size: 50px;
+    }
+    .frontend{
+        font-size: 60px;
+    }
+    .developer{
+        font-size: 45px;
+        padding-left: 0;
+    }
+    .line{
+        width: 40px;
+    }
+}
+
+/* Tablets */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Laptops */
+@media only screen and (min-width: 992px) {
+    
+}
+
+
+
+
+
+
+
+
+
+.icons-container{
+    display: flex;
+    flex-direction: column;
+    /*align-items: flex-end;*/
+    justify-content: center;
+    width: auto;
+    min-height: calc(100vh - 90px);
+    position: relative;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.icons-container a{
+    height: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 15px;
+}
+
+.icons-container img{
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+}
+
+.icons-container .text{
+    visibility: hidden;
+}
+
+.icons-container a:hover{
+    cursor: pointer;
+}
+
+.icons-container img:hover{
+    width: 25px;
+    height: 25px;
+}
+
+.icons-container a:hover .text{
+    visibility: visible;
+}
+
+
+
+
+
+
