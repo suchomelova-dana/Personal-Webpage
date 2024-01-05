@@ -531,6 +531,7 @@
     .description .desc-links{
         margin-top: 10px;
     }
+
 }
 
 /* Tablets */
@@ -732,6 +733,8 @@
     #trasko, #portal, #youtube{
         flex-direction: row-reverse;
     }
+
+
 
 }
 
