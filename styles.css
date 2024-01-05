@@ -29,6 +29,7 @@
     display: flex;
     height: calc(100vh - 90px);
     min-height: 400px;
+    position: relative;
 }
 
 
@@ -146,7 +147,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /*background-color: red;*/
+    background-color: white;
     gap: 140px;
 }
 
@@ -303,6 +304,7 @@
     display: flex;
     justify-content: center;
     border-bottom: solid 3px black;
+    background-color: white;
 }
 
 
@@ -315,6 +317,8 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 2%;
+    background-color: white;
+
 }
 
 .aboutText{
@@ -490,7 +494,7 @@
     }
 
     #projekty{
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 800;
         width: 100%;
         letter-spacing: 20px;
