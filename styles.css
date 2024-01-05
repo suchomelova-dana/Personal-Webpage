@@ -496,8 +496,8 @@
     #projekty{
         font-size: 30px;
         font-weight: 800;
-        width: 100%;
-        letter-spacing: 20px;
+        width: 85%;
+        letter-spacing: 10px;
         display: flex;
         justify-content: center;
         border-bottom: solid 3px black;
