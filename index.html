@@ -15,7 +15,6 @@
     </head>
 
     <body>
-        <div class="body">
 
             <div class="header">
                 <span>Suchomelová Dana</span>
@@ -32,25 +31,186 @@
                     </h1>
                 </div>
 
-<!--                <div class="icons-container">-->
-<!--                    <a> <span class="text">Dana Suchomelová</span> <img src="icons/linkedin.png" alt="">  </a>-->
-<!--                    <a> <span class="text">Dana Suchomelová</span> <img src="icons/dribble.png" alt=""> </a>-->
-<!--                    <a> <span class="text">danka.suchomelova@seznam.cz</span> <img src="icons/mail.png" alt=""> </a>-->
-<!--                    <a> <span class="text">+420 774 878 279</span> <img src="icons/iphone.png" alt=""> </a>-->
-<!--                </div>-->
+                <div class="icons-container">
+                    <a id="linkedIn" class="link" href="https://www.linkedin.com/in/dana-suchomelov%C3%A1-4a2014293/" target="_blank">
+                        <span id="linkedInLinkText" class="text">Dana Suchomelová</span>
+                        <div class="icon" id="linkedInIconContainer" onmouseover="showLinkText('linkedIn')" onmouseleave="hideAllVisibleLinkTexts()">
+                            <img id="linkedInIcon" src="icons/linkedin.png" alt="">
+                        </div>
 
-<!--                <div class="icons-container">-->
-<!--                    <a> <img src="icons/linkedin.png" alt=""><span class="text">Dana Suchomelová</span></a>-->
-<!--                    <a> <img src="icons/dribble.png" alt=""> <span class="text">Dana Suchomelová</span></a>-->
-<!--                    <a> <img src="icons/mail.png" alt=""> <span class="text">danka.suchomelova@seznam.cz</span></a>-->
-<!--                    <a> <img src="icons/iphone.png" alt=""> <span class="text">+420 774 878 279</span></a>-->
-<!--                </div>-->
+                    </a>
 
+                    <a id="dribble" class="link" href="https://dribbble.com/suchodan" target="_blank">
+                        <span id="dribbleLinkText" class="text">Dana Suchomelová</span>
+                        <div class="icon" id="dribbleIconContainer" onmouseover="showLinkText('dribble')" onmouseleave="hideAllVisibleLinkTexts()">
+                            <img id="dribbleIcon" src="icons/dribble.png" alt="">
+                        </div>
+
+                    </a>
+
+                    <a id="mail" class="link" href="mailto:danka.suchomelova@seznam.cz" target="_blank">
+                        <span id="mailLinkText" class="text">danka.suchomelova@seznam.cz</span>
+                        <div class="icon" id="mailIconContainer" onmouseover="showLinkText('mail')" onmouseleave="hideAllVisibleLinkTexts()">
+                            <img id="mailIcon" src="icons/mail.png" alt="">
+                        </div>
+
+                    </a>
+
+                    <a id="phone" class="link" href="tel:+420774-878-279" target="_blank">
+                        <span id="phoneLinkText" class="text">+420 774 878 279</span>
+                        <div class="icon" id="phoneIconContainer" onmouseover="showLinkText('phone')" onmouseleave="hideAllVisibleLinkTexts()">
+                            <img id="phoneIcon" src="icons/iphone.png" alt="">
+                        </div>
+
+                    </a>
+                </div>
 
             </div>
 
 
-        </div>
+            <div class="space"></div>
+
+
+
+            <div class="about">
+                <div class="aboutText">
+                    <p class="p1">Jmenuji se Dana Suchomelová a zaměřuji se na vývoj frontendu a návrh uživatelského rozhraní. </p>
+                    <p>Vystudovala jsem Fakultu Informačních technologií Českého vysokého učení technického v Praze, obor Softwarové inženýrství. Studium mi dalo rozhled do mnoha sfér IT a položil všeobecné základy. </p>
+                    <p>Dále jsem se specializovala na návrh UI/UX, vývoj frontendu a související úkony. Preferuji minimalistický styl a jednoduchost, snažím se o uživatelskou přívětivost a konzistenci v návrzích.</p>
+                </div>
+
+                <div class="aboutHeading">
+                    <img src="images/ja_budeapest.jpg" alt="" id="aboutImg">
+                    <h2 id="aboutMe">ABOUT ME</h2>
+                </div>
+            </div>
+
+            <div class="aboutText">
+            </div>
+
+
+            <div class="space"></div>
+
+
+
+            <div class="portfolio">
+
+                <h2 id="projekty">PROJEKTY</h2>
+
+
+<!--                TRASKO-->
+                <div id="trasko" class="imgLeft portfolioItem hide-animate">
+                    <div class="description">
+                        <h3>SK TRASKO VYŠKOV</h3>
+                        <p>Jedná se o statický web pro oddíl moderní gymnastiky SK TRASKO Vyškov. Návrhy byly realizovány ve Figmě a web byl implemntován pomocí Vue.js 3 a typescriptu. Web podporuje přihlášení členů oddílu pro soukromé informace. </p>
+                        <div class="desc-links">
+                            <a href="https://github.com/suchomelova-dana/SK-TRASKO-Vyskov" target="_blank" >GitHub</a>
+                            <a href="https://www.figma.com/file/CQFsWhm8bDZLkdJ0MClBub/Sk-Trasko-Vy%C5%A1kov?type=design&node-id=0%3A1&mode=design&t=KrDiaqoBQ0h32NWY-1" target="_blank" >Figma</a>
+                        </div>
+                    </div>
+                    <img src="images/trasko_new.png" alt="" class="portfolioImg">
+                </div>
+
+<!--                MINDWELL-->
+                <div id="mindwell" class="imgRight portfolioItem hide-animate">
+                    <div class="description">
+                        <h3>BLUDNÝ KRUH</h3>
+                        <p>Jedná se o interaktivní návrh UI/UX ve Figmě pro mobilní i desktopové zařízení. Cvičení obsahuje bludný kruh (myšlenky, emoce, tělesné pocity a chování), který uživatel vyplňuje a má si tak uvědomit návaznost jednotlivých částí kruhu. </p>
+                        <div class="desc-links">
+                            <a href="https://www.figma.com/file/FFQuMzcxBgAm4RXJvZzPVw/Mindwell?type=design&mode=design&t=ZKbVDl8uuADY9IC0-1" target="_blank">Figma</a>
+                        </div>
+                    </div>
+
+                    <img src="images/mindwell_new.png" alt="" class="portfolioImg">
+                </div>
+
+<!--                PORTAL-->
+                <div id="portal" class="imgLeft portfolioItem hide-animate">
+                    <div class="description">
+                        <h3>TRENÉRSKÝ PORTÁL</h3>
+                        <p>Trenérský portál je web vytvořený na zakázku. Jedná se o výukový portál pro trenérky moderní gymnastiky. Obsahuje edukativní videa. Portál byl vytvořen pomocí frameworku Vue.js a javascriptu. </p>
+                        <div class="desc-links">
+                            <a href="https://github.com/suchomelova-dana/Trenersky-portal" target="_blank" >GitHub</a>
+                            <a href="https://trenerskyportal.cz/" target="_blank" >Web</a>
+                        </div>
+                    </div>
+                    <img src="images/portal_new.png" alt="" class="portfolioImg">
+                </div>
+
+<!--                DENIK-->
+                <div id="denik" class="imgRight portfolioItem hide-animate">
+                    <div class="description">
+                        <h3>DENÍK</h3>
+                        <p>Jedná se o rozpracované návrhy smyšlené aplikace. Aplikace denník by měla sloužit pro hodnocení dnů, zaznamenávání činností, které jste během dne dělali. Součástí by měl být také měsíční a týdenní přehled hodnocení. </p>
+                        <div class="desc-links">
+                            <a href="https://www.figma.com/file/vg1HtxeV7CW5ORMP934gC1/Den%C3%ADk?type=design&mode=design&t=ZKbVDl8uuADY9IC0-1" target="_blank">Figma</a>
+                        </div>
+                    </div>
+                    <img src="images/denik_new.png" alt="" class="portfolioImg">
+                </div>
+
+                <div id="youtube" class="imgLeft portfolioItem hide-animate">
+                    <div class="description">
+                        <h3>YOUTUBE CLONE APP</h3>
+                        <p>Aplikace v Reactu inspirovaná aplikací Youtube. Uživatel v ní může sledovat videa, filtrovat a vyhledávat. Aplikace byla vytvořena v Reactu, a využívá online API. </p>
+                        <div class="desc-links">
+                            <a href="https://github.com/suchomelova-dana/Youtube-clone-App" target="_blank ">GitHub</a>
+                        </div>
+                    </div>
+                    <img src="images/youtube1.png" alt="" class="portfolioImg">
+                </div>
+
+                <div id="dbs" class="imgRight portfolioItem hide-animate">
+                    <div class="description">
+                        <h3>DBS PORTÁL</h3>
+                        <p>DBS portál je webová aplikace Vysokého učení technického v Praze, která slouží pro výuku předmětu Databázové systémy. Na projektu jsem se začala podílet již ve 2. ročníku svého studia. Po dlouhodobé spolupráci jsem se poté rozhodla na projekt navázat v rámci své bakalářské práce. Práce zahrnovala sběr uživatelských požadavků, návrh,
+                            implementaci a uživatelské testování.
+                            Použité technologie: Figma, Vue.js 3 + Composition API, Typescript, Router, Pinia, ESLint, Quasar</p>
+                        <div class="desc-links">
+                            <a href="https://github.com/suchomelova-dana/Bachelor-Thesis" target="_blank" >GitHub</a>
+                            <a href="https://www.figma.com/file/rjbyv2t9HdAaBuL6oOZsU1/Psan%C3%AD-test%C5%AF?type=design&node-id=278%3A6835&mode=design&t=ZKbVDl8uuADY9IC0-1" target="_blank" >Figma</a>
+                        </div>
+                    </div>
+                    <img src="images/dbs_2.png" alt="" class="portfolioImg">
+
+                </div>
+
+            </div>
+
+
     </body>
+    <script>
+        function showLinkText(text){
+            const textToBeShown = document.getElementById(text + 'LinkText');
+            textToBeShown.classList.add('show');
+        }
+
+        function hideAllVisibleLinkTexts(){
+            const elementsToBeHidden = document.getElementsByClassName('text');
+            for (var i = 0; i < elementsToBeHidden.length; ++i) {
+                elementsToBeHidden[i].classList.remove('show');
+            }
+        }
+
+        let sections = document.getElementsByClassName('portfolioItem')
+
+        console.log(sections)
+
+        window.onscroll = () => {
+            for (let item of sections) {
+                let top = window.scrollY;
+                let offset = item.offsetTop;
+                let height = item.offsetHeight;
+
+                if (top >= (offset - 500) && top < offset + height) {
+                    item.classList.add('show-animate')
+                }
+                // else{
+                //   item.classList.remove('show-animate')
+                // }
+            }
+        }
+    </script>
+
 </html>
 

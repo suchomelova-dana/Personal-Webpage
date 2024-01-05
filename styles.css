@@ -4,33 +4,31 @@
     font-family: 'Comfortaa', sans-serif;
 }
 
-.body{
-    min-height: 100vh;
-}
 
 .header{
     display: flex;
-    justify-content: center;
-    padding-top: 40px;
+    justify-content: flex-start;
+    /*padding-top: 40px;*/
     text-align: center;
-    animation: fadeIn 1s;
+    height: 90px;
+    /*background-color: yellow;*/
+    padding-left: 10%;
 }
 
 .header span{
     font-weight: 800;
-    padding: 8px;
+    /*padding: 8px;*/
     display: flex;
     justify-content: center;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
+    /*background-color: blue;*/
 }
 
 .content{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-left: 10%;
-    padding-right: 10%;
+    height: calc(100vh - 90px);
+    min-height: 400px;
 }
 
 
@@ -38,8 +36,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: calc(100vh - 90px);
     animation: slideLeft 1s;
+    padding-left: 10%;
+    padding-right: 10%;
+    /*background-color: purple;*/
 }
 
 .headingUI{
@@ -50,12 +50,13 @@
     font-family: Clash Display,sans-serif;
     font-size: 100px;
     font-weight: 800;
-    margin-bottom: -10px;
+    margin-bottom: -20px;
+    /*color: #FF5001;*/
 }
 
 .developer{
     font-family: Clash Display,sans-serif;
-    font-size: 70px;
+    font-size: 60px;
     padding-left: 10px;
 }
 
@@ -85,22 +86,316 @@
 }
 
 
-@keyframes fadeIn {
+
+.icons-container{
+    display: flex;
+    /*background-color: red;*/
+    width: auto;
+}
+
+.icons-container a{
+    height: 20px;
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+}
+
+.icons-container .icon{
+    display: flex;
+}
+
+.icons-container img{
+    width: 20px;
+    height: 20px;
+    padding-left: 10px;
+}
+
+.text{
+    visibility: hidden;
+}
+
+.icons-container img:hover{
+    cursor:pointer;
+}
+
+.show{
+    visibility: visible !important;
+    animation: slideRight 0.5s ease-in-out ;
+}
+
+@keyframes slideRight {
     0%{
+        transform: translateX(10px);
         opacity: 0;
     }
     80%{
+        transform: translateX(0);
         opacity: 1;
     }
 }
 
 
+
+
+.portfolio{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*background-color: red;*/
+    gap: 140px;
+}
+
+.space{
+    height: 200px;
+    width: 100%;
+    background-color: white;
+}
+
+/*.links{*/
+/*    background: black;*/
+/*    color: white;*/
+/*    width: 250px;*/
+/*    padding: 30px;*/
+/*    transform: rotateZ(-90deg);*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    position: absolute;*/
+/*    top: -90px;*/
+
+/*}*/
+
+/*#trasko .links, #portal .links, #youtube .links{*/
+/*    left: 0;*/
+/*}*/
+
+/*#mindwell .links, #denik .links, #dbs .links{*/
+/*    right: 0;*/
+/*}*/
+
+
+
+/*.links a{*/
+/*    font-family: Clash Display,sans-serif;*/
+/*    font-size: 60px;*/
+/*    font-weight: 400;*/
+/*}*/
+
+/*.links a:hover{*/
+/*    color: #FF5001;*/
+/*    cursor: pointer;*/
+/*}*/
+
+.portfolioItem{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.imgLeft{
+    justify-content: flex-start;
+}
+
+.imgRight{
+    justify-content: flex-end;
+}
+
+.portfolioImg{
+    width: 70%;
+}
+
+
+.description{
+    /*background-color: orange;*/
+    display: flex;
+    flex-direction: column;
+    /*justify-content: flex-end;*/
+    width: 30%;
+    margin-top: -30px;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.description h3{
+    font-family: Clash Display,sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    padding-bottom: 50px;
+}
+
+
+.description p{
+    line-height: 30px;
+    padding-bottom: 30px;
+}
+
+
+.description .desc-links{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    /*background-color: red;*/
+    width: 100%;
+    gap: 20px;
+}
+
+.description .desc-links a{
+    font-family: Clash Display,sans-serif;
+    font-size: 15px;
+    padding: 20px 30px 20px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border: solid 1px black;
+    background-color: white;
+    color: black !important;
+}
+
+.description .desc-links a:hover{
+    background-color: black;
+    color:white !important;
+    border: solid 1px black;
+    font-weight: 600;
+}
+
+
+#trasko h3{
+    color: #08BDBA;
+}
+
+#mindwell h3{
+    color: #BE336D;
+}
+
+
+#portal h3 {
+    color: #6B6B6B;
+}
+
+#denik h3{
+    color: #562ECC;
+}
+
+#youtube h3{
+    color: red;
+}
+
+#dbs h3{
+    color: #3C8DBC;
+}
+
+
+
+
+
+#projekty{
+    font-family: Clash Display,sans-serif;
+    font-size: 60px;
+    font-weight: 800;
+    width: 100%;
+    letter-spacing: 20px;
+    display: flex;
+    justify-content: center;
+    border-bottom: solid 3px black;
+}
+
+
+
+
+
+
+.about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2%;
+}
+
+.aboutText{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    width: 80%;
+    /*background-color: blue;*/
+}
+
+.aboutText .p1{
+    font-size: 20px;
+    font-family: Clash Display,sans-serif;
+    font-weight: 800;
+    color: black;
+}
+
+.about p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    text-align: left;
+    color: dimgray;
+}
+
+
+.aboutHeading{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    width: 100%;
+    /*background-color: purple;*/
+}
+
+.aboutHeading img{
+    /*width: 50%;*/
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-10%, -50%);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.aboutHeading h2{
+    font-family: Clash Display,sans-serif;
+    font-size: 5vw;
+    font-weight: 800;
+    width: 40%;
+    background-color: black;
+    color: white;
+    padding: 10px 40px 10px 40px;
+    text-align: right;
+    display: flex;
+    position: absolute;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.hide-animate{
+    opacity: 0;
+    transition: 1s;
+    transform: translateY(50px);
+}
+
+.show-animate{
+    opacity: 1;
+    transition: 1s;
+    transform: translateY(0);
+}
+
+
+
+
+
+
+
+
 /* Phones */
-@media only screen and (max-width: 600px) {
-    .body {
-        padding-left: 15%;
-        padding-right: 15%;
-    }
+@media only screen and (max-width: 672px) {
+
     .headingUI{
         font-size: 50px;
     }
@@ -114,68 +409,331 @@
     .line{
         width: 40px;
     }
+    .content{
+        flex-direction: column;
+    }
+
+    .headingArea{
+        height: calc(100vh - 90px - 60px);
+    }
+
+    .icons-container{
+        height: 60px;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 20%;
+        padding-right: 20%;
+
+    }
+    .text{
+        display: none;
+    }
+
+    .icons-container a{
+        /*flex-direction: column;*/
+    }
+
+    .about{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        /*gap: 2%;*/
+    }
+
+
+    .aboutText{
+        margin: 30px 5% 30px 5%;
+        width: 90%;
+    }
+
+    .aboutText .p1{
+    }
+
+    .about p{
+    }
+
+
+    .aboutHeading{
+        /*background-color: orange;*/
+        width: 100%;
+        height: 200px;
+        display: flex;
+
+    }
+
+    .aboutHeading img{
+        width: 100%;
+        position: relative;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        top: 0;
+        transform: translate(0, 0);
+        object-fit: cover;
+        height: 100%;
+
+    }
+
+    .aboutHeading h2{
+        font-family: Clash Display,sans-serif;
+        font-size: 10vw;
+        font-weight: 800;
+        width: 40%;
+        background-color: black;
+        color: white;
+        padding: 10px 40px 10px 40px;
+        text-align: right;
+        display: flex;
+        position: relative;
+        /*top: 50%;*/
+        /*right: 0;*/
+        transform: translate(0, 0);
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    #projekty{
+        font-size: 40px;
+        font-weight: 800;
+        width: 100%;
+        letter-spacing: 20px;
+        display: flex;
+        justify-content: center;
+        border-bottom: solid 3px black;
+    }
+
+    .portfolioItem{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .portfolioImg{
+        width: 100%;
+    }
+
+
+    .description{
+        /*background-color: orange;*/
+        /*justify-content: center;*/
+        width: 90%;
+        padding: 0;;
+        margin: 0 5% 50px;
+    }
+
+    .description h3{
+        font-family: Clash Display,sans-serif;
+        font-size: 50px;
+        font-weight: 800;
+        padding-bottom: 20px;
+    }
+
+    .description .desc-links{
+        margin-top: 10px;
+    }
 }
 
 /* Tablets */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 673px) and (max-width: 990px) {
+
+    .headingUI{
+        font-size: 65px;
+    }
+    .frontend{
+        font-size: 80px;
+    }
+    .developer{
+        font-size: 60px;
+        padding-left: 0;
+    }
+    .line{
+        width: 70px;
+    }
+    .content{
+        flex-direction: column;
+    }
+
+    .headingArea{
+        height: calc(100vh - 90px - 60px);
+        /*background-color: orange !important;*/
+    }
+
+    .icons-container{
+        justify-content: space-between;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    .text{
+        display: none;
+    }
+    .icons-container a{
+        flex-direction: row-reverse;
+    }
+
+
+    .aboutText{
+        margin-left: 2%;
+        /*background-color: blue;*/
+        width: 120%;
+    }
+
+    .aboutText .p1{
+    }
+
+    .about p{
+    }
+
+
+    .aboutHeading{
+        /*background-color: purple;*/
+        width:70%;
+    }
+
+    .aboutHeading img{
+        width: 80%;
+        transform: translate(0, -50%);
+
+    }
+
+    .aboutHeading h2{
+        width: 60%;
+        padding: 5px 20px 5px 20px;
+        top: 50%;
+        transform: translate(-20%, -140%);
+    }
+
+    .portfolioItem{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .portfolioImg{
+        width: 100%;
+    }
+
+
+    .description{
+        width: 90%;
+        padding: 0;
+        margin: 0 5% 50px;
+    }
+
+    .description h3{
+        padding-bottom: 20px !important;
+    }
 
 }
+
+
 
 /* Laptops */
-@media only screen and (min-width: 992px) {
-    
+@media only screen and (min-width: 991px) {
+
+    .headingUI{
+        font-size: 80px;
+    }
+    .frontend{
+        font-size: 100px;
+    }
+    .developer{
+        font-size: 70px;
+        padding-left: 0;
+    }
+    .line{
+        width: 90px;
+    }
+    .content{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .headingArea{
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .icons-container{
+        height: calc(100vh - 90px);
+        min-height: 300px;
+        right: 0;
+        padding-right: 20px;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+
+    }
+
+    .about{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2%;
+    }
+
+    .aboutText{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+        width: 80%;
+        /*background-color: blue;*/
+    }
+
+    .aboutText .p1{
+        font-size: 20px;
+        font-family: Clash Display,sans-serif;
+        font-weight: 800;
+        color: black;
+    }
+
+    .about p{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        text-align: left;
+        color: dimgray;
+    }
+
+
+    .aboutHeading{
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        width: 100%;
+        /*background-color: purple;*/
+    }
+
+    .aboutHeading img{
+        width: 50%;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(-10%, -50%);
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    }
+
+    .aboutHeading h2{
+        font-family: Clash Display,sans-serif;
+        font-size: 5vw;
+        font-weight: 800;
+        width: 40%;
+        background-color: black;
+        color: white;
+        padding: 10px 40px 10px 40px;
+        text-align: right;
+        display: flex;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(-70%, -50%);
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    #trasko, #portal, #youtube{
+        flex-direction: row-reverse;
+    }
+
 }
 
 
 
 
-
-
-
-
-
-.icons-container{
-    display: flex;
-    flex-direction: column;
-    /*align-items: flex-end;*/
-    justify-content: center;
-    width: auto;
-    min-height: calc(100vh - 90px);
-    position: relative;
-    padding-left: 20px;
-    padding-right: 10px;
-}
-.icons-container a{
-    height: 20px;
-    margin: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 15px;
-}
-
-.icons-container img{
-    width: 20px;
-    height: 20px;
-    padding-right: 10px;
-}
-
-.icons-container .text{
-    visibility: hidden;
-}
-
-.icons-container a:hover{
-    cursor: pointer;
-}
-
-.icons-container img:hover{
-    width: 25px;
-    height: 25px;
-}
-
-.icons-container a:hover .text{
-    visibility: visible;
-}
 
 
 
