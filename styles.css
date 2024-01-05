@@ -532,6 +532,10 @@
         margin-top: 10px;
     }
 
+    .space{
+        height: 15px;
+    }
+
 }
 
 /* Tablets */
@@ -621,6 +625,10 @@
 
     .description h3{
         padding-bottom: 20px !important;
+    }
+
+    .space{
+        height: 30px;
     }
 
 }
