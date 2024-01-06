@@ -368,26 +368,21 @@
     display: flex;
     width: 80%;
     min-height: 90px;
-    /*background-color: red;*/
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 20px 10%;
+    padding: 0 10%;
 }
 
 
 .footer-container a{
-    height: 20px;
     padding: 10px;
-    /*margin: 15px;*/
     display: flex;
-    /*width: 300px;*/
     flex-direction: row;
     align-items: center;
     font-size: 15px;
     color: black;
     text-decoration: none;
-    /*background-color: #08BDBA;*/
 }
 
 .footer-container  .icon{
@@ -543,9 +538,8 @@
     }
     .footer-container{
         flex-direction: column;
-        justify-content: center;
         align-items: flex-start;
-
+        padding: 20px 10%;
     }
 
 }
@@ -641,6 +635,10 @@
 
     .space{
         height: 150px;
+    }
+
+    .footer-container {
+        padding: 10px 10%;
     }
 
 }
@@ -754,8 +752,9 @@
         flex-direction: row-reverse;
     }
 
-
-
+    .footer-container {
+        padding: 0 10%;
+    }
 }
 
 
