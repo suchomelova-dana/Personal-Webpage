@@ -201,6 +201,8 @@
     font-size: 50px;
     font-weight: 800;
     padding-bottom: 50px;
+    text-transform: uppercase;
+
 }
 
 
@@ -240,6 +242,7 @@
 }
 
 
+
 #trasko h3{
     color: #08BDBA;
 }
@@ -263,6 +266,10 @@
 
 #dbs h3{
     color: #3C8DBC;
+}
+
+#ekos h3{
+    color: #0A9E09;
 }
 
 
@@ -759,7 +766,8 @@
         transform: translate(-70%, -50%);
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
-    #trasko, #portal, #youtube{
+
+    .reverse-content{
         flex-direction: row-reverse;
     }
 
